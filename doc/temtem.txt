@@ -1,0 +1,55 @@
+*temtem.txt*                   Temtem for Vim
+*temtem*
+
+==============================================================================
+CONTENTS                                                     *temtem-contents*
+
+  Introduction                         |temtem-introduction|
+  Usage                                |temtem-usage|
+  Commands                             |temtem-commands|
+  Settings                             |temtem-settings|
+
+
+===============================================================================
+Introduction                                              *temtem-introduction*
+
+Insert the default template file when opening a new buffer.
+You can also load any template.
+
+===============================================================================
+Usage                                                            *temtem-usage*
+
+An example in HTML.
+
+Create ~/.vim/config/temtem/html/default.txt and write any string.
+Use the following path when using on Windows.
+~/vimfiles/config/temtem/html/default.txt
+
+When you open a new HTML file the template will be inserted.
+
+===============================================================================
+Commands                                                      *temtem-commands*
+
+Temtem {template name}                                                 *Temtem*
+
+    Load a template by specifying the template file name associated
+    with the file type.
+
+===============================================================================
+Settings                                                      *temtem-settings*
+
+|g:temtem_template_basepath|                         *g:temtem_template_basepath*
+    
+    You can change the directory where templates are placed.
+>
+    g:temtem_template_path = '~/.vim/config/temtem/'
+<
+
+    By default, the following directories are specified for each OS.
+
+    Windows: ~/vimfiles/config/temtem/
+    Mac:     ~/.vim/config/temtem/
+    Linux:   ~/.vim/config/temtem/
+
+===============================================================================
+vim:tw=78:ts=8:noet:ft=help:norl:
